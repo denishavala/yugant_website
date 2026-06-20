@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Assurance | Yugant Engineering</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 & Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Splash Screen Loader -->
+  <div id="splash-loader">
+    <div class="spinner-box"></div>
+    <div class="loader-text">Yugant Engineering</div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-cube">Y</div>
+        <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="products.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="product-infrastructure.html">Building Infrastructure</a></li>
+              <li><a class="dropdown-item" href="product-firesafety.html">Fire & Safety Components</a></li>
+              <li><a class="dropdown-item" href="product-sanitary.html">Sanitary Products</a></li>
+              <li><a class="dropdown-item" href="product-fasteners.html">Fasteners & C-Parts</a></li>
+              <li><a class="dropdown-item" href="product-electrical.html">Electrical & Electronics</a></li>
+              <li><a class="dropdown-item" href="product-ssturned.html">SS Turned Components</a></li>
+              <li><a class="dropdown-item" href="product-forging.html">Forging Expertise</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All Products Hub</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="quality.html">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          
+          <!-- Theme Toggle Button -->
+          <li class="nav-item ms-lg-3 my-2 my-lg-0">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+          
+          <!-- Navbar CTA -->
+          <li class="nav-item ms-lg-2">
+            <a href="contact.html" class="btn-premium btn-premium-primary py-2 px-4" style="font-size: 0.9rem;">
+              Get a Quote
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       PAGE HEADER & BREADCRUMBS
+       ========================================== -->
+  <section class="py-5" style="padding-top: 100px !important; padding-bottom: 20px !important;">
+    <div class="container reveal">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> &gt; <span class="active">Quality</span>
+      </div>
+      <span class="section-tag">Quality Policy</span>
+      <h1 class="display-5 fw-bold text-primary mb-3">Our Quality Commitment</h1>
+      <p class="text-secondary" style="max-width: 600px;">
+        Maintaining strict process audits, chemical test sheets, and dimensional gauges to assure zero-defect components.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       QUALITY POLICY
+       ========================================== -->
+  <section class="py-5" style="border-top: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Text details -->
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+          <span class="section-tag">Policy Statement</span>
+          <h2 class="section-title">Zero Deviations, <span>Zero Faults</span></h2>
+          <p class="text-secondary mb-4">
+            Our quality policy defines Yugant Engineering's standard: <strong>"To manufacture metallic parts that strictly match the customer's specified tolerances and material chemistry while ensuring continuous improvement at all levels."</strong>
+          </p>
+          <p class="text-secondary mb-4">
+            We operate in conformity with ISO 9001:2015 directives. Every shipment leaving our facilities is backed by a dimensional report, thread ring gauge testing charts, and chemical laboratory certifications.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6 d-flex align-items-center gap-2">
+              <i class="fas fa-circle-check text-success"></i>
+              <span class="fw-medium text-secondary">RoHS Material Certifications</span>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center gap-2">
+              <i class="fas fa-circle-check text-success"></i>
+              <span class="fw-medium text-secondary">REACH Environmental Compliant</span>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center gap-2">
+              <i class="fas fa-circle-check text-success"></i>
+              <span class="fw-medium text-secondary">100% Go/No-Go Thread Gauge Audit</span>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center gap-2">
+              <i class="fas fa-circle-check text-success"></i>
+              <span class="fw-medium text-secondary">First Article Sample Inspection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric visual box -->
+        <div class="col-lg-6 reveal-right text-center">
+          <div class="glass-panel p-5 border d-inline-block shadow-sm" style="max-width: 450px;">
+            <h3 class="fw-extrabold text-primary mb-3">Purity Standard</h3>
+            <p class="text-secondary small mb-4">
+              We analyze the scrap raw materials utilizing spectrometry to ensure lead and zinc ratios stay compliant before extrusion rods are drawn.
+            </p>
+            <div class="progress" style="height: 8px; background-color: var(--border-color);">
+              <div class="progress-bar" role="progressbar" style="width: 100%; background-color: var(--primary) !important;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between mt-2 small text-secondary">
+              <span>99.9% Material Authenticity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INSPECTION PROCESS TIMELINE
+       ========================================== -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Auditing Steps</span>
+        <h2 class="section-title">Our Strict <span>Inspection Process</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          Quality inspection occurs at three defined control gates during our manufacturing cycle.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Gate 1 -->
+        <div class="col-lg-4 reveal">
+          <div class="glass-panel p-4 border h-100">
+            <span class="badge bg-primary mb-3" style="background-color: var(--primary) !important;">Gate 1: Incoming Rod Audit</span>
+            <h5 class="fw-bold mb-2">Raw Material Verification</h5>
+            <p class="text-secondary small mb-0">
+              We verify the chemical composition of incoming brass rods under spectrometer testing. Rods containing radioactive contamination or incorrect copper ratios are rejected.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gate 2 -->
+        <div class="col-lg-4 reveal" style="transition-delay: 0.1s;">
+          <div class="glass-panel p-4 border h-100">
+            <span class="badge bg-primary mb-3" style="background-color: var(--primary) !important;">Gate 2: In-Process CNC Audit</span>
+            <h5 class="fw-bold mb-2">First Article Dimensional Check</h5>
+            <p class="text-secondary small mb-0">
+              Once tooling is set, initial parts are tested against CAD blueprints. Production continues only after inspectors confirm coordinates using digital micrometers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gate 3 -->
+        <div class="col-lg-4 reveal" style="transition-delay: 0.2s;">
+          <div class="glass-panel p-4 border h-100">
+            <span class="badge bg-primary mb-3" style="background-color: var(--primary) !important;">Gate 3: Pre-Dispatch Audit</span>
+            <h5 class="fw-bold mb-2">Visual & Plating Checks</h5>
+            <p class="text-secondary small mb-0">
+              Finished components undergo thread ring gauge audits and coating thickness checks. Verified parts are then vacuum sealed in anti-tarnish plastic sleeves.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTING EQUIPMENT
+       ========================================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Instrumentation</span>
+        <h2 class="section-title">Our <span>QA Inspection Instruments</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          We utilize high-end instruments to verify that all dimensions match your blueprint coordinates.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Instrument 1 -->
+        <div class="col-md-4 reveal">
+          <div class="glass-panel p-4 border text-center">
+            <div class="fs-1 text-primary mb-3"><i class="fa-solid fa-camera"></i></div>
+            <h5 class="fw-bold mb-2">Digital Profile Projector</h5>
+            <p class="text-secondary small mb-0">Magnifies component profiles up to 50x to check critical outer angles and grooves.</p>
+          </div>
+        </div>
+
+        <!-- Instrument 2 -->
+        <div class="col-md-4 reveal" style="transition-delay: 0.1s;">
+          <div class="glass-panel p-4 border text-center">
+            <div class="fs-1 text-primary mb-3"><i class="fa-solid fa-ring"></i></div>
+            <h5 class="fw-bold mb-2">Thread Plug & Ring Gauges</h5>
+            <p class="text-secondary small mb-0">Verifies thread pitch and go/no-go parameters for NPT, BSPT, and Metric threads.</p>
+          </div>
+        </div>
+
+        <!-- Instrument 3 -->
+        <div class="col-md-4 reveal" style="transition-delay: 0.2s;">
+          <div class="glass-panel p-4 border text-center">
+            <div class="fs-1 text-primary mb-3"><i class="fa-solid fa-gauge"></i></div>
+            <h5 class="fw-bold mb-2">Vernier Calipers & Micrometers</h5>
+            <p class="text-secondary small mb-0">Digital instrumentation holding resolution parameters up to 0.001mm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CERTIFICATIONS
+       ========================================== -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Accreditation</span>
+        <h2 class="section-title">Certifications & <span>Compliance Standards</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          Our facility complies with leading regulatory and safety standards to support international industrial demands.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Cert 1 -->
+        <div class="col-lg-3 col-sm-6 reveal">
+          <div class="glass-panel p-4 text-center border h-100 shadow-sm">
+            <div class="fs-1 text-primary mb-2"><i class="fa-solid fa-shield-halved"></i></div>
+            <h6 class="fw-bold mb-2">ISO 9001:2015</h6>
+            <p class="text-secondary small mb-0">Quality Management System certified processes.</p>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="col-lg-3 col-sm-6 reveal" style="transition-delay: 0.1s;">
+          <div class="glass-panel p-4 text-center border h-100 shadow-sm">
+            <div class="fs-1 text-primary mb-2"><i class="fa-solid fa-ban"></i></div>
+            <h6 class="fw-bold mb-2">RoHS Compliant</h6>
+            <p class="text-secondary small mb-0">Alloy compositions verified lead-restricted standards.</p>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="col-lg-3 col-sm-6 reveal" style="transition-delay: 0.2s;">
+          <div class="glass-panel p-4 text-center border h-100 shadow-sm">
+            <div class="fs-1 text-primary mb-2"><i class="fa-solid fa-circle-nodes"></i></div>
+            <h6 class="fw-bold mb-2">REACH Compliant</h6>
+            <p class="text-secondary small mb-0">Alloy raw scrap monitored for ecological limits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTINUOUS IMPROVEMENT
+       ========================================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Info -->
+        <div class="col-lg-6 mb-4 mb-lg-0 reveal-left">
+          <span class="section-tag">Kaizen Model</span>
+          <h2 class="section-title">Continuous <span>Operational Improvement</span></h2>
+          <p class="text-secondary mb-4">
+            We follow continuous improvement structures in our CNC machining lines. By updating machine program scripts, tooling coordinates, and chip evacuation designs, we consistently minimize tooling wear and reject ratios.
+          </p>
+          <ul class="text-secondary mb-0">
+            <li>Weekly check evaluations of CNC coordinate alignments.</li>
+            <li>Tool-wear life monitoring tracking modules.</li>
+            <li>Client feedback reviews for assembly alignment checks.</li>
+          </ul>
+        </div>
+
+        <!-- Graphic -->
+        <div class="col-lg-6 reveal-right text-center">
+          <div class="glass-panel p-5 border d-inline-block shadow-sm" style="max-width: 450px;">
+            <h4 class="fw-bold text-primary mb-3">Customer Satisfaction Rating</h4>
+            <h2 class="display-4 fw-extrabold text-primary mb-2"><span class="counter-val" data-target="99.2" data-decimal="true">0</span>%</h2>
+            <p class="text-secondary small m-0">Reorder & satisfaction rate tracked across 200+ global clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CLEAN FOOTER
+       ========================================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Company column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <div class="logo-cube">Y</div>
+            <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+          </div>
+          <p class="mb-4 text-light-gray" style="color: #9CA3AF;">
+            ISO 9001:2015 certified manufacturer and exporter of premium brass items, stainless steel components, fasteners, and custom engineered turned hardware.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="text-white">Quick Links</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products Hub</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Products</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="product-infrastructure.html">Building Infrastructure</a></li>
+            <li><a href="product-firesafety.html">Fire & Safety</a></li>
+            <li><a href="product-sanitary.html">Sanitary Products</a></li>
+            <li><a href="product-fasteners.html">Fasteners & C-Parts</a></li>
+            <li><a href="product-electrical.html">Electrical & Electronics</a></li>
+            <li><a href="product-ssturned.html">SS Turned Components</a></li>
+            <li><a href="product-forging.html">Forging Expertise</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Contact Info</h4>
+          <p class="mb-2"><i class="fas fa-location-dot me-2 text-primary"></i> GIDC Estate, Jamnagar, India</p>
+          <p class="mb-2"><i class="fas fa-phone me-2 text-primary"></i> +91 98765 43210</p>
+          <p class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> sales@yugantengineering.com</p>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom text-center mt-5 pt-3" style="border-top: 1px solid #1F2937;">
+        <p class="m-0 text-light-gray" style="font-size: 0.85rem;">
+          &copy; 2026 Yugant Engineering. All Rights Reserved. Designed to premium standards.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Extra UI elements -->
+  <button id="back-to-top" title="Go to top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <a href="https://wa.me/919876543210?text=Hello%20Yugant%20Engineering%2C%20I%27m%20interested%20in%20quality%20inspected%20brass%20components." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

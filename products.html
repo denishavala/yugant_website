@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | Yugant Engineering</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 & Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Splash Screen Loader -->
+  <div id="splash-loader">
+    <div class="spinner-box"></div>
+    <div class="loader-text">Yugant Engineering</div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-cube">Y</div>
+        <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="products.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="product-infrastructure.html">Building Infrastructure</a></li>
+              <li><a class="dropdown-item" href="product-firesafety.html">Fire & Safety Components</a></li>
+              <li><a class="dropdown-item" href="product-sanitary.html">Sanitary Products</a></li>
+              <li><a class="dropdown-item" href="product-fasteners.html">Fasteners & C-Parts</a></li>
+              <li><a class="dropdown-item" href="product-electrical.html">Electrical & Electronics</a></li>
+              <li><a class="dropdown-item" href="product-ssturned.html">SS Turned Components</a></li>
+              <li><a class="dropdown-item" href="product-forging.html">Forging Expertise</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All Products Hub</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="quality.html">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          
+          <!-- Theme Toggle Button -->
+          <li class="nav-item ms-lg-3 my-2 my-lg-0">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+          
+          <!-- Navbar CTA -->
+          <li class="nav-item ms-lg-2">
+            <a href="contact.html" class="btn-premium btn-premium-primary py-2 px-4" style="font-size: 0.9rem;">
+              Get a Quote
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       PAGE HEADER & BREADCRUMBS
+       ========================================== -->
+  <section class="py-5" style="padding-top: 100px !important; padding-bottom: 20px !important;">
+    <div class="container reveal">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> &gt; <span class="active">Products</span>
+      </div>
+      <span class="section-tag">Catalog Hub</span>
+      <h1 class="display-5 fw-bold text-primary mb-3">Our Products Catalog</h1>
+      <p class="text-secondary" style="max-width: 600px;">
+        Browse our comprehensive catalog of custom metal components, fasteners, SS turned pins, and forged brass items.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PRODUCT GRID & CATEGORIES
+       ========================================== -->
+  <section class="py-5 bg-light-theme-secondary" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      
+      <!-- Filter Buttons -->
+      <div class="portfolio-filter reveal text-center mb-5">
+        <button class="portfolio-filter-btn active" data-filter="all">All Components</button>
+        <button class="portfolio-filter-btn" data-filter="brass">Brass Products</button>
+        <button class="portfolio-filter-btn" data-filter="steel">Steel & Fasteners</button>
+        <button class="portfolio-filter-btn" data-filter="industrial">Heavy Industry</button>
+      </div>
+
+      <!-- Responsive Product Grid -->
+      <div class="row g-4 portfolio-grid reveal-zoom">
+        
+        <!-- Product 1: Building Infrastructure -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="brass">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_infrastructure.png" alt="Building Infrastructure Brass Parts" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Building & Infra</span>
+              <h4 class="fw-bold mb-2">Building Infrastructure</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                Precision brass fittings, anchors, concrete connectors, and pipe sleeves engineered for heavy construction and ventilation layouts.
+              </p>
+              <a href="product-infrastructure.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Fire & Safety Components -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="industrial">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_fire_safety.png" alt="Brass Fire Sprinkler Heads" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Fire & Safety</span>
+              <h4 class="fw-bold mb-2">Fire & Safety Components</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                High-density hot pressed and turned fire sprinkler nozzle frames, valves, and water line connector adapters.
+              </p>
+              <a href="product-firesafety.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Sanitary Products -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="brass">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_sanitary.png" alt="Sanitary Brass Valves & Taps" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Sanitary</span>
+              <h4 class="fw-bold mb-2">Sanitary Products</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                Plumbing hose bushings, internal cartridge valves, extension pipe unions, adapters, and flow control hardware.
+              </p>
+              <a href="product-sanitary.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Fasteners & C-Parts -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="steel">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_fasteners.png" alt="Brass Fasteners Screws & Bolts" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Fasteners</span>
+              <h4 class="fw-bold mb-2">Fasteners & C-Parts</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                Heavy duty custom brass screws, hexagon nuts, threaded studs, pins, and custom C-class hardware parts.
+              </p>
+              <a href="product-fasteners.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Electrical & Electronics -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="brass">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_electrical.png" alt="Electrical Brass Earth Terminal Blocks" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Electrical</span>
+              <h4 class="fw-bold mb-2">Electrical & Electronics</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                High-conductivity neutral bar blocks, earth terminals, copper connector pins, and switchgear components.
+              </p>
+              <a href="product-electrical.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: SS Turned Components -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="steel">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_ss_turned.png" alt="Stainless Steel Turned Fittings" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Stainless Steel</span>
+              <h4 class="fw-bold mb-2">SS Turned Components</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                CNC-machined grade 304 & 316 stainless steel turned hardware pins, adapters, sleeves, and critical components.
+              </p>
+              <a href="product-ssturned.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Forging Expertise -->
+        <div class="col-lg-4 col-md-6 portfolio-item" data-category="industrial">
+          <div class="card glass-panel h-100 overflow-hidden">
+            <div class="portfolio-img-box" style="aspect-ratio: 4/3;">
+              <img src="assets/prod_forging.png" alt="Forged Brass Valves Components" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge bg-primary align-self-start mb-2" style="font-size: 0.75rem; background-color: var(--primary) !important;">Forging</span>
+              <h4 class="fw-bold mb-2">Forging Expertise</h4>
+              <p class="text-secondary small flex-grow-1 mb-0">
+                Hot forged and closed-die pressed heavy brass parts with optimized metal structure and superior fatigue limits.
+              </p>
+              <a href="product-forging.html" class="btn-premium btn-premium-primary py-2 mt-4 justify-content-center">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CLEAN FOOTER
+       ========================================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Company column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <div class="logo-cube">Y</div>
+            <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+          </div>
+          <p class="mb-4 text-light-gray">
+            ISO 9001:2015 certified manufacturer and exporter of premium brass items, stainless steel components, fasteners, and custom engineered turned hardware.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="text-white">Quick Links</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products Hub</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Products</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="product-infrastructure.html">Building Infrastructure</a></li>
+            <li><a href="product-firesafety.html">Fire & Safety</a></li>
+            <li><a href="product-sanitary.html">Sanitary Products</a></li>
+            <li><a href="product-fasteners.html">Fasteners & C-Parts</a></li>
+            <li><a href="product-electrical.html">Electrical & Electronics</a></li>
+            <li><a href="product-ssturned.html">SS Turned Components</a></li>
+            <li><a href="product-forging.html">Forging Expertise</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Contact Info</h4>
+          <p class="mb-2"><i class="fas fa-location-dot me-2 text-primary"></i> GIDC Estate, Jamnagar, India</p>
+          <p class="mb-2"><i class="fas fa-phone me-2 text-primary"></i> +91 98765 43210</p>
+          <p class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> sales@yugantengineering.com</p>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom text-center mt-5 pt-3" style="border-top: 1px solid #1F2937;">
+        <p class="m-0 text-light-gray" style="font-size: 0.85rem;">
+          &copy; 2026 Yugant Engineering. All Rights Reserved. Designed to premium standards.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Extra UI elements -->
+  <button id="back-to-top" title="Go to top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <a href="https://wa.me/919876543210?text=Hello%20Yugant%20Engineering%2C%20I%27m%20interested%20in%20custom%20brass%20manufacturing%20services." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

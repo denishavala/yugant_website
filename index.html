@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yugant Engineering | Precision Brass & Metal Components</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Yugant Engineering is a leading manufacturer and global exporter of high-precision brass components, CNC turned parts, fittings, fasteners, and forged metallic hardware.">
+  <meta name="keywords" content="brass manufacturing, fasteners, fire safety components, sanitary brass, electrical components, SS turned components, Jamnagar brass">
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 & Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Splash Screen Loader -->
+  <div id="splash-loader">
+    <div class="spinner-box"></div>
+    <div class="loader-text">Yugant Engineering</div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-cube">Y</div>
+        <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="products.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="product-infrastructure.html">Building Infrastructure</a></li>
+              <li><a class="dropdown-item" href="product-firesafety.html">Fire & Safety Components</a></li>
+              <li><a class="dropdown-item" href="product-sanitary.html">Sanitary Products</a></li>
+              <li><a class="dropdown-item" href="product-fasteners.html">Fasteners & C-Parts</a></li>
+              <li><a class="dropdown-item" href="product-electrical.html">Electrical & Electronics</a></li>
+              <li><a class="dropdown-item" href="product-ssturned.html">SS Turned Components</a></li>
+              <li><a class="dropdown-item" href="product-forging.html">Forging Expertise</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All Products Hub</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="quality.html">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          
+          <!-- Theme Toggle Button -->
+          <li class="nav-item ms-lg-3 my-2 my-lg-0">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+          
+          <!-- Navbar CTA -->
+          <li class="nav-item ms-lg-2">
+            <a href="contact.html" class="btn-premium btn-premium-primary py-2 px-4" style="font-size: 0.9rem;">
+              Get a Quote
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       1. HERO BANNER
+       ========================================== -->
+  <section id="home" class="hero-section">
+    <!-- Full-screen zoom background container -->
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <span class="section-tag text-white-50" style="color: rgba(255, 255, 255, 0.75) !important;">Manufacturing Excellence</span>
+      <h1 class="hero-title animate-fade-in">
+        Precision Machined Metal <br>
+        <span>Components for Global Export</span>
+      </h1>
+      <p class="hero-description animate-fade-up">
+        Welcome to Yugant Engineering. We manufacture and export premium brass, copper, and stainless steel custom components built to international standards.
+        <br><span class="fw-bold" style="color: #60A5FA;">Specializing in: </span><span class="typed-text"></span><span class="cursor">&nbsp;</span>
+      </p>
+      
+      <div class="d-flex justify-content-center flex-wrap gap-3 animate-buttons">
+        <a href="products.html" class="btn-premium btn-premium-primary">
+          View Product Line
+        </a>
+        <a href="contact.html" class="btn-premium btn-premium-outline">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       2. ABOUT COMPANY (Short Introduction)
+       ========================================== -->
+  <section class="about-section py-5" style="border-top: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Visual Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+          <div class="about-img-box">
+            <img src="assets/about_factory.png" alt="Engineering manufacturing CNC facility" class="about-img img-fluid">
+            <div class="about-experience-badge">
+              <h2>15+</h2>
+              <p>Years of <br>Precision</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Description Column -->
+        <div class="col-lg-6 reveal-right">
+          <span class="section-tag">Company Overview</span>
+          <h2 class="section-title">Engineered to Standard. <span>Built to Last.</span></h2>
+          <p class="text-secondary mb-4">
+            Founded with a vision of manufacturing excellence, Yugant Engineering is a trusted supplier of custom metal turned components. We design and deliver zero-defect solutions tailored to the strict quality expectations of international procurement organizations.
+          </p>
+          
+          <!-- Mission & Vision Summary Tabs -->
+          <div class="about-tab-nav">
+            <button class="about-tab-btn active" data-tab="home-mission">Mission</button>
+            <button class="about-tab-btn" data-tab="home-vision">Vision</button>
+          </div>
+          
+          <div class="about-tab-content">
+            <div id="home-mission" class="about-tab-pane active">
+              <p class="mb-0 text-secondary">
+                To fabricate top-tier industrial fittings, fasteners, and turned parts while optimizing our machining coordinates to minimize lead times, waste, and costs.
+              </p>
+            </div>
+            <div id="home-vision" class="about-tab-pane">
+              <p class="mb-0 text-secondary">
+                To expand our global logistics footprint, keeping Yugant Engineering at the forefront of the precision component exports sector through technical innovation.
+              </p>
+            </div>
+          </div>
+          
+          <div class="mt-4 pt-2">
+            <a href="about.html" class="btn-premium btn-premium-primary">
+              Read Our History
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. WHY CHOOSE US
+       ========================================== -->
+  <section class="why-section py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Our Strengths</span>
+        <h2 class="section-title">Why Global Clients <span>Partner With Us</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          We build business relationships on clean records of production capabilities, strict testing, and reliable global fulfillment.
+        </p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Feature 1: Quality -->
+        <div class="col-md-4 reveal">
+          <div class="service-card text-center p-4">
+            <div class="service-icon-wrapper mb-3">
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4 class="service-title">Quality Manufacturing</h4>
+            <p class="service-desc text-secondary mb-0">We implement strict ISO 9001:2015 process checks. Every batch is supported with comprehensive micrometer and profile projector inspection charts.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 2: Skilled Team -->
+        <div class="col-md-4 reveal" style="transition-delay: 0.1s;">
+          <div class="service-card text-center p-4">
+            <div class="service-icon-wrapper mb-3">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <h4 class="service-title">Skilled Engineering Team</h4>
+            <p class="service-desc text-secondary mb-0">Our engineers analyze complex CAD blueprints, optimizing tooling geometry and machining coordinates for seamless production runs.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 3: Modern Infra -->
+        <div class="col-md-4 reveal" style="transition-delay: 0.2s;">
+          <div class="service-card text-center p-4">
+            <div class="service-icon-wrapper mb-3">
+              <i class="fa-regular fa-building"></i>
+            </div>
+            <h4 class="service-title">Modern Infrastructure</h4>
+            <p class="service-desc text-secondary mb-0">Our machine shop consists of advanced multi-axis CNC machines, VMCs, and high-speed auto lathes which handle tolerances up to ±0.01mm.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 4: Timely Delivery -->
+        <div class="col-md-6 reveal">
+          <div class="service-card p-4 d-flex align-items-start gap-4">
+            <div class="service-icon-wrapper flex-shrink-0">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <h4 class="service-title text-start">Timely Global Delivery</h4>
+              <p class="service-desc text-secondary mb-0 text-start">With streamlined export logistics and packaging procedures, we ship components smoothly via major sea ports to Europe, North America, and Asia on schedule.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Feature 5: Customer Satisfaction -->
+        <div class="col-md-6 reveal" style="transition-delay: 0.1s;">
+          <div class="service-card p-4 d-flex align-items-start gap-4">
+            <div class="service-icon-wrapper flex-shrink-0">
+              <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <div>
+              <h4 class="service-title text-start">Customer-Centric Support</h4>
+              <p class="service-desc text-secondary mb-0 text-start">We maintain open lines of communication, providing detailed updates, sample dispatches for prototype approval, and customized order packing to client standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. OUR MANUFACTURING PROCESS
+       ========================================== -->
+  <section id="process" class="process-section py-5 bg-light-theme-secondary" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Production Cycle</span>
+        <h2 class="section-title">Our <span>Manufacturing Workflow</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          From blueprint layouts to packing boxes, we follow a rigorous, quality-assured manufacturing workflow.
+        </p>
+      </div>
+      
+      <div class="timeline-container">
+        <!-- Connecting Line -->
+        <div class="timeline-line">
+          <div class="timeline-line-progress"></div>
+        </div>
+        
+        <div class="timeline-grid" style="grid-template-columns: repeat(5, 1fr);">
+          <!-- Step 1: Design -->
+          <div class="timeline-step">
+            <div class="timeline-node">
+              <span>01</span>
+              <i class="fas fa-check"></i>
+            </div>
+            <h5>1. Design</h5>
+            <p>We convert CAD files and blueprints into CNC paths, and verify samples.</p>
+          </div>
+          
+          <!-- Step 2: Manufacturing -->
+          <div class="timeline-step">
+            <div class="timeline-node">
+              <span>02</span>
+              <i class="fas fa-check"></i>
+            </div>
+            <h5>2. Manufacturing</h5>
+            <p>Advanced CNC machines and automatic lathes shape components.</p>
+          </div>
+          
+          <!-- Step 3: Quality Inspection -->
+          <div class="timeline-step">
+            <div class="timeline-node">
+              <span>03</span>
+              <i class="fas fa-check"></i>
+            </div>
+            <h5>3. Quality Inspection</h5>
+            <p>Digital profile projectors and thread gauges check dimensions.</p>
+          </div>
+          
+          <!-- Step 4: Packaging -->
+          <div class="timeline-step">
+            <div class="timeline-node">
+              <span>04</span>
+              <i class="fas fa-check"></i>
+            </div>
+            <h5>4. Packaging</h5>
+            <p>Parts are packed in anti-rust bags and strong sea-worthy boxes.</p>
+          </div>
+          
+          <!-- Step 5: Delivery -->
+          <div class="timeline-step">
+            <div class="timeline-node">
+              <span>05</span>
+              <i class="fas fa-check"></i>
+            </div>
+            <h5>5. Delivery</h5>
+            <p>Custom dispatches are shipped globally via cargo carriers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. INDUSTRIES SERVED
+       ========================================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">Target Sectors</span>
+        <h2 class="section-title">Industries We <span>Serve Globally</span></h2>
+        <p class="text-secondary mx-auto" style="max-width: 600px;">
+          Our components are integrated into major mechanical and structural systems in key industrial sectors.
+        </p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Industry 1 -->
+        <div class="col-lg-3 col-sm-6 reveal">
+          <div class="glass-panel text-center p-4 h-100 hover-lift shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="fa-regular fa-building"></i></div>
+            <h5 class="fw-bold">Building & Infra</h5>
+            <p class="text-secondary small mb-0">Structural brass connectors, structural components, and masonry anchors.</p>
+          </div>
+        </div>
+        
+        <!-- Industry 2 -->
+        <div class="col-lg-3 col-sm-6 reveal" style="transition-delay: 0.1s;">
+          <div class="glass-panel text-center p-4 h-100 hover-lift shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="fa-regular fa-bell"></i></div>
+            <h5 class="fw-bold">Fire & Safety</h5>
+            <p class="text-secondary small mb-0">Sprinkler valves, nozzle heads, and pressure line connector assemblies.</p>
+          </div>
+        </div>
+        
+        <!-- Industry 3 -->
+        <div class="col-lg-3 col-sm-6 reveal" style="transition-delay: 0.2s;">
+          <div class="glass-panel text-center p-4 h-100 hover-lift shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="fa-regular fa-circle-dot"></i></div>
+            <h5 class="fw-bold">Sanitary & Plumbing</h5>
+            <p class="text-secondary small mb-0">Hose adapters, water flow regulator bushings, pipe fittings, and valve plugs.</p>
+          </div>
+        </div>
+        
+        <!-- Industry 4 -->
+        <div class="col-lg-3 col-sm-6 reveal" style="transition-delay: 0.3s;">
+          <div class="glass-panel text-center p-4 h-100 hover-lift shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="fa-regular fa-lightbulb"></i></div>
+            <h5 class="fw-bold">Electrical & Electronics</h5>
+            <p class="text-secondary small mb-0">Earth blocks, copper pins, electrical switchboards links, and connectors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. COMPANY STRENGTH / STATISTICS
+       ========================================== -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Stats Text -->
+        <div class="col-lg-5 mb-4 mb-lg-0 reveal-left">
+          <span class="section-tag">Statistics</span>
+          <h2 class="section-title">Our Global <span>Manufacturing Scale</span></h2>
+          <p class="text-secondary mb-0">
+            Over the years, we have scaled our workshop capacity and dispatch volume to support bulk OEM contracts. Here is a brief look at our current manufacturing strengths.
+          </p>
+        </div>
+        
+        <!-- Stats Grid -->
+        <div class="col-lg-7 reveal-right">
+          <div class="row g-4">
+            <!-- Stat 1 -->
+            <div class="col-sm-6">
+              <div class="glass-panel p-4 text-center border">
+                <h3 class="fw-extrabold text-primary display-6"><span class="counter-val" data-target="15">0</span>+</h3>
+                <p class="text-secondary m-0 fw-medium">Years of Experience</p>
+              </div>
+            </div>
+            
+            <!-- Stat 2 -->
+            <div class="col-sm-6">
+              <div class="glass-panel p-4 text-center border">
+                <h3 class="fw-extrabold text-primary display-6"><span class="counter-val" data-target="250">0</span>+</h3>
+                <p class="text-secondary m-0 fw-medium">Happy Clients</p>
+              </div>
+            </div>
+            
+            <!-- Stat 3 -->
+            <div class="col-sm-6">
+              <div class="glass-panel p-4 text-center border">
+                <h3 class="fw-extrabold text-primary display-6"><span class="counter-val" data-target="5000">0</span>+</h3>
+                <p class="text-secondary m-0 fw-medium">Products Delivered</p>
+              </div>
+            </div>
+            
+            <!-- Stat 4 -->
+            <div class="col-sm-6">
+              <div class="glass-panel p-4 text-center border">
+                <h3 class="fw-extrabold text-primary display-6"><span class="counter-val" data-target="25">0</span>+</h3>
+                <p class="text-secondary m-0 fw-medium">Countries Served</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. QUALITY COMMITMENT
+       ========================================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Visual Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-left text-center">
+          <img src="assets/why_choose_us.png" alt="Dimensional Quality Control Bench" class="img-fluid border rounded" style="max-height: 380px;">
+        </div>
+        
+        <!-- Info Column -->
+        <div class="col-lg-6 reveal-right">
+          <span class="section-tag">Quality Policy</span>
+          <h2 class="section-title">Zero Tolerances for <span>Dimensional Errors</span></h2>
+          <p class="text-secondary mb-4">
+            We follow strict internal quality audits based on ISO standards. Our testing bench is equipped with standard digital profile projectors, coating thickness indicators, and micro-precision gauges to assure compliance.
+          </p>
+          
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fas fa-check text-success"></i>
+              <span class="fw-medium text-secondary">Raw Material Chemical Composition Testing</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fas fa-check text-success"></i>
+              <span class="fw-medium text-secondary">RoHS Environmental Directives Compliant</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="fas fa-check text-success"></i>
+              <span class="fw-medium text-secondary">First-Article Inspections & Material Certificates</span>
+            </li>
+          </ul>
+          
+          <a href="quality.html" class="btn-premium btn-premium-primary">
+            View Inspection Equipment
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. CONTACT CTA SECTION
+       ========================================== -->
+  <section class="py-5 text-center bg-light-theme-secondary" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-5 reveal-zoom">
+      <div class="p-5 border mx-auto bg-white rounded shadow-sm" style="max-width: 800px;">
+        <h2 class="fw-extrabold text-primary mb-3">Ready to Request a Custom Blueprint Quote?</h2>
+        <p class="text-secondary mb-4 mx-auto" style="max-width: 550px;">
+          Send us your component files, thread dimensions, alloy specs, and order volume. Our engineers will verify the requirements and respond within 24 hours.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="contact.html" class="btn-premium btn-premium-primary">Request a Quote</a>
+          <a href="contact.html#contact-form" class="btn-premium btn-premium-outline">Contact Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. CLEAN FOOTER
+       ========================================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Company Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <div class="logo-cube">Y</div>
+            <span>Yugant <strong style="color: var(--primary);">Engineering</strong></span>
+          </div>
+          <p class="mb-4 text-light-gray">
+            ISO 9001:2015 certified manufacturer and exporter of premium brass items, stainless steel components, fasteners, and custom engineered turned hardware.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="text-white">Quick Links</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products Hub</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Products</h4>
+          <ul class="footer-links list-unstyled">
+            <li><a href="product-infrastructure.html">Building Infrastructure</a></li>
+            <li><a href="product-firesafety.html">Fire & Safety</a></li>
+            <li><a href="product-sanitary.html">Sanitary Products</a></li>
+            <li><a href="product-fasteners.html">Fasteners & C-Parts</a></li>
+            <li><a href="product-electrical.html">Electrical & Electronics</a></li>
+            <li><a href="product-ssturned.html">SS Turned Components</a></li>
+            <li><a href="product-forging.html">Forging Expertise</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white">Contact Info</h4>
+          <p class="mb-2"><i class="fas fa-location-dot me-2 text-primary"></i> GIDC Estate, Jamnagar, India</p>
+          <p class="mb-2"><i class="fas fa-phone me-2 text-primary"></i> +91 98765 43210</p>
+          <p class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> sales@yugantengineering.com</p>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom text-center mt-5 pt-3" style="border-top: 1px solid #1F2937;">
+        <p class="m-0 text-light-gray" style="font-size: 0.85rem;">
+          &copy; 2026 Yugant Engineering. All Rights Reserved. Designed to premium standards.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Extra UI elements -->
+  <button id="back-to-top" title="Go to top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <a href="https://wa.me/919876543210?text=Hello%20Yugant%20Engineering%2C%20I%27m%20interested%20in%20custom%20brass%20manufacturing%20services." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner-content">
+      <p class="m-0 small">
+        We use cookies to analyze web traffic and optimize form submissions. By continuing, you agree to our policies.
+      </p>
+      <div class="d-flex gap-2">
+        <button id="accept-cookies" class="btn-premium btn-premium-primary py-1 px-3" style="font-size: 0.8rem;">Accept</button>
+        <button id="decline-cookies" class="btn-premium btn-premium-outline py-1 px-3" style="font-size: 0.8rem;">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
